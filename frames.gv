@@ -1,0 +1,37 @@
+digraph G {
+"wamv/base_link" -> "wamv/front_left_camera_post_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/front_right_camera_post_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/lidar_wamv_post_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/lidar_wamv_vrx_post_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/middle_right_camera_post_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/cpu_cases_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/dummy_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/front_left_camera_post_arm_link" -> "wamv/front_left_camera_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/front_left_camera_post_link" -> "wamv/front_left_camera_post_arm_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/front_left_camera_link" -> "wamv/front_left_camera_link_optical"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/front_right_camera_post_arm_link" -> "wamv/front_right_camera_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/front_right_camera_post_link" -> "wamv/front_right_camera_post_arm_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/front_right_camera_link" -> "wamv/front_right_camera_link_optical"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/left_battery_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/lidar_wamv_link"[label="Broadcaster: /base_to_lidar\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/lidar_wamv_post_link" -> "wamv/lidar_wamv_post_arm_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/lidar_wamv_vrx_post_arm_link" -> "wamv/lidar_wamv_vrx_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/lidar_wamv_vrx_post_link" -> "wamv/lidar_wamv_vrx_post_arm_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/middle_right_camera_post_arm_link" -> "wamv/middle_right_camera_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/middle_right_camera_post_link" -> "wamv/middle_right_camera_post_arm_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/middle_right_camera_link" -> "wamv/middle_right_camera_link_optical"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/pinger"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/right_battery_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1555.694 sec old)\nBuffer length: 0.000 sec\n"];
+"wamv/base_link" -> "wamv/left_engine_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 50.115 Hz\nMost recent transform: 1555.673 ( 0.021 sec old)\nBuffer length: 2.175 sec\n"];
+"wamv/left_engine_link" -> "wamv/left_propeller_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 50.115 Hz\nMost recent transform: 1555.673 ( 0.021 sec old)\nBuffer length: 2.175 sec\n"];
+"wamv/base_link" -> "wamv/right_engine_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 50.115 Hz\nMost recent transform: 1555.673 ( 0.021 sec old)\nBuffer length: 2.175 sec\n"];
+"wamv/right_engine_link" -> "wamv/right_propeller_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 50.115 Hz\nMost recent transform: 1555.673 ( 0.021 sec old)\nBuffer length: 2.175 sec\n"];
+"wamv/base_link" -> "wamv/ball_shooter_base_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10.476 Hz\nMost recent transform: 1555.673 ( 0.021 sec old)\nBuffer length: 2.100 sec\n"];
+"wamv/ball_shooter_base_link" -> "wamv/ball_shooter_launcher_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10.476 Hz\nMost recent transform: 1555.673 ( 0.021 sec old)\nBuffer length: 2.100 sec\n"];
+"wamv/base_link" -> "wamv/gps_wamv_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10.476 Hz\nMost recent transform: 1555.673 ( 0.021 sec old)\nBuffer length: 2.100 sec\n"];
+"wamv/base_link" -> "wamv/imu_wamv_link"[label="Broadcaster: /wamv/rob_st_pub\nAverage rate: 10.476 Hz\nMost recent transform: 1555.673 ( 0.021 sec old)\nBuffer length: 2.100 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1555.694"[ shape=plaintext ] ;
+ }->"wamv/base_link";
+}

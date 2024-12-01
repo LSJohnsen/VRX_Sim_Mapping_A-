@@ -1,0 +1,11 @@
+<launch>
+
+    <!-- launch previously created map -->    
+    <node name="map_server" pkg="map_server" type="map_server" args="/home/lsjohns/maps/mymap.yaml" required="true" output="screen" cwd="node" />
+
+    <!-- delay not working for some reason -->
+    <param name="start_delay" value="5" />
+
+    <!-- path planner -->
+    <node name="path_planner" pkg="wamv_navigation" type="path_planner.py" respawn="true" output="screen" />
+</launch>
