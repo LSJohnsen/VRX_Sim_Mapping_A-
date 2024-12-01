@@ -6,4 +6,4 @@
 
 4. Downloading workspace with dependencies is done by following the wiki for the Gazebo Classic for ROS 1 Noetic in https://github.com/osrf/vrx
 
-5. For Lidar mapping launch vrx_gazebo sydneyregatta.launch before running the map generation script with RViz. The path planner is directly launched with the dedicated launch file once a map has been generated. The USV can either be controlled my the keydrive twist2thrust or by publishing message directly to thruster topics. 
+5. For Lidar mapping launch vrx_gazebo sydneyregatta.launch before running the map generation script with RViz. The path planner is directly launched with the dedicated launch file once a map has been generated. The USV can either be controlled by the keydrive twist2thrust or by publishing message directly to thruster topics. 
