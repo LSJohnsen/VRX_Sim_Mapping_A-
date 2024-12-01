@@ -14,8 +14,8 @@ class Node:
     
     """
     creates an object for each Node 
-    lt dunder method is used to compare cost of each object cost when called later
-    => self.cost(Node1) < self.cost(Node2)
+    lt dunder method is used to compare cost of each object cost when heap has several nodes of similar heuristic
+    self.cost(Node1) < self.cost(Node2)
     """
     def __init__(self, x, y, cost, parent_index):
         self.x = x
@@ -185,7 +185,8 @@ class AStarPlannerNode:
         Iterate over path xy from closed set until start index
         """
 
-        
+        total_cost = goal_node.cost
+
         pos_map_x, pos_map_y = [goal_node.x], [goal_node.y]
         parent = goal_node.parent_index
         while parent != -1:
@@ -193,8 +194,12 @@ class AStarPlannerNode:
             pos_map_x.append(node.x)
             pos_map_y.append(node.y)
             parent = node.parent_index
-        return pos_map_x[::-1], pos_map_y[::-1]
+        
+        total_points = len(pos_map_x)
+        rospy.loginfo(f"Total points to goal: {total_points}")
+        rospy.loginfo(f"Total cost to goal: {total_cost}")
 
+        return pos_map_x[::-1], pos_map_y[::-1]
 
     def motion(self):
         """
@@ -207,10 +212,10 @@ class AStarPlannerNode:
             (0, 1, 1),
             (-1, 0, 1),
             (0, -1, 1),
-            (-1, -1, 2),
-            (-1, 1, 2),
-            (1, -1, 2),
-            (1, 1, 2),
+            (-1, -1, np.sqrt(1)),
+            (-1, 1, np.sqrt(1)),
+            (1, -1, np.sqrt(1)),
+            (1, 1, np.sqrt(1)),
         ]
 
 
