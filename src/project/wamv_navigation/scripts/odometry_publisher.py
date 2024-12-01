@@ -7,7 +7,7 @@ from tf.transformations import euler_from_quaternion, quaternion_from_euler
 from geodesy.utm import fromLatLong 
 
 
-#Create odom publsiher from GPS and IMU data
+
 class OdometryPublisher:
     def __init__(self):
 
@@ -41,7 +41,7 @@ class OdometryPublisher:
             self.initial_utm = current_utm
             return
 
-        # north/east relative to start position
+  
         self.north = current_utm.northing - self.initial_utm.northing
         self.east = current_utm.easting - self.initial_utm.easting 
 
@@ -89,6 +89,6 @@ class OdometryPublisher:
         odom.pose.pose.orientation.w = quat[3] 
 
 
-        # publish odom msg
+
         self.odom_pub.publish(odom)
         rospy.loginfo_throttle(1.0, f"Current position: North = {self.north:.2f}, East = {self.east:.2f}, Yaw = {self.yaw:.2f} radians")
