@@ -49,9 +49,9 @@ class MapGenerator:
         self.origin_x = -self.map_size[0] / 2 * self.map_resolution
         self.origin_y = -self.map_size[1] / 2 * self.map_resolution
       
-        self.grid = OccupancyGrid() #Create map
-        self.grid.header = Header() #Timestamp in frame std_msgs/msg/Header.msg
-        self.grid.header.frame_id = "map" #point of frame to timestamp
+        self.grid = OccupancyGrid() 
+        self.grid.header = Header() 
+        self.grid.header.frame_id = "map" 
         self.grid.info.resolution = self.map_resolution 
         self.grid.info.width = self.map_size[0]
         self.grid.info.height = self.map_size[1]
