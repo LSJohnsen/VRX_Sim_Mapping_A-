@@ -4,17 +4,17 @@ import rospy
 import numpy as np
 
 
-from sensor_msgs.msg import PointCloud2 # lidar message type
-from sensor_msgs.point_cloud2 import read_points # Lidar message coordinates
+from sensor_msgs.msg import PointCloud2 
+from sensor_msgs.point_cloud2 import read_points 
 
 from nav_msgs.msg import Odometry
-from nav_msgs.msg import OccupancyGrid # Grid map
+from nav_msgs.msg import OccupancyGrid 
 
-from std_msgs.msg import Header # Timestamped data in coordinate frame
-from geometry_msgs.msg import TransformStamped # transform between header and child frames
+from std_msgs.msg import Header
+from geometry_msgs.msg import TransformStamped 
 
-import tf2_ros #transforms
-from tf2_sensor_msgs.tf2_sensor_msgs import do_transform_cloud #transform pointcloud
+import tf2_ros
+from tf2_sensor_msgs.tf2_sensor_msgs import do_transform_cloud
 
 class MapGenerator:
     def __init__(self):
