@@ -1,6 +1,6 @@
 <h1> Project ACIT4820 - Obstacle Detection and Path Planning for Unmanned Surface Vessels in ROS and Gazebo:<h6> 
 
-1. This project details the implementation of Lidar based 2D mapping before applying the map for A* path planning implementation, and is based on the VRX classic Gazebo environment using a H-configured WAM-V USV. The main contributions are found under /src/project/wamv_navigation
+1. This project details the implementation of Lidar based 2D mapping before applying the map for A* path planning implementation, and is based on the VRX classic Gazebo environment using a H-configured WAM-V USV. The main contributions of this project are found under /src/project/wamv_navigation
 
 2. The Sydneyregatta world was customized with the VRX buoy objects, while the WAM-V model was modified to remove the ball shooter.
 
